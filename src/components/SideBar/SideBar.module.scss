@@ -1,0 +1,45 @@
+@import '../../constants/colors.scss';
+
+$font-stack: Helvetica, sans-serif;
+$font-size: 12px;
+
+.wrapper {
+  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding-inline: 30px;
+  padding-block: 40px;
+  gap: 15px;
+  font: 100% $font-stack;
+  align-items: flex-start;
+  min-height: 100vh;
+
+  span {
+    font-size: $font-size;
+  }
+}
+
+.btn {
+  background-color: $blue;
+  flex: none;
+  border: none;
+  border-radius: 5px;
+  width: auto;
+  padding-inline: 20px;
+  padding-block: 5px;
+  cursor: pointer;
+  color: $white;
+  font-size: $font-size;
+  white-space: nowrap;
+
+  &:hover {
+    filter: brightness(0.85);
+  }
+}
+
+@media (max-width: 570px) {
+  .wrapper {
+    padding-inline: 10px;
+  }
+}
